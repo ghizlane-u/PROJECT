@@ -3,33 +3,6 @@ const path = require('path'); // don't forget to require path module
 const filePath = path.join(__dirname, 'blogs.json'); 
 class blogModels {  
    astPostId = 0;
-
-  //static getBlogs() {
-    //try {
-     // const data = fs.readFileSync(filePath, 'utf-8');
-     // return JSON.parse(data);
-    //} catch (error) {
-      // If the file doesn't exist or there's an error reading it, return an empty array
-     // return [];
-    //}
-  //} 
-//static addpost(title, content,author,date) {
-    //try {
-      // Get existing posts
-      //const existingPosts = this.getBlogs();
-
-      // Add the new post to the array
-      //existingPosts.push(newPost);
-
-      // Write the updated array back to the file
-      //fs.writeFileSync(filePath, JSON.stringify(existingPosts, null, 2), 'utf-8');
-
-     // return true; // Indicate success
-   // } catch (error) {
-     // console.error(error);
-     // return false; // Indicate failure
-    //}
- // }
   static getBlogs() {
   const rawData = fs.readFileSync(filePath);
   const posts = JSON.parse(rawData); 

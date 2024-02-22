@@ -10,42 +10,7 @@ class PostController {
       res.status(500).send("Internal Server Error");
     }
   } 
- //static addnewPost(req,res){
-//var name=req.body.name; 
-//var title=req.body.title;
-//var author=req.body.author;
-////var date=req.body.date; 
-////var x=post.addpost(name,title,author,date);
-//if (x==true)
-//res.send("the post id add sussesflly");
-//else{ 
- /// res.send(" the add failed");
-//}
-//}
-//} 
-
-  //static addNewPost(req, res) {
-   // const { title, content, author } = req.body;
-
-    //if (!title || !content || !author) {
-    //  return res.status(400).send('Missing required fields in the request body');
-    //}
-
-    //const newPost = {
-     // title,
-      //content,
-      //author,
-     // date: new Date().toISOString(),
-    //};
-
-   // const success = post.createPost(newPost);
-
-   // if (success) {
-    //  res.send('Post added successfully');
-    //} else {
-    //  res.status(500).send('Failed to add post');
-    //}
-  //} 
+ 
   static addNewPost(req, res) {
     const { name,title, content, author,date } = req.body;
       console.log('Request Body:', req.body);  
